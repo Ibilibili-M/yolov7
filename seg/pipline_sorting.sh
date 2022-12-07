@@ -1,0 +1,13 @@
+python segment/train.py \
+--data data/sorting.yaml \
+--cfg models/segment/yolov7l-seg.yaml \
+--hyp data/hyps/hyp.scratch-high.yaml \
+--weights yolov7l-seg.pt \
+--batch 16 \
+--epochs 300 \
+--img 640 \
+--rect \
+--device 0 \
+--save-period 5 \
+--project sorting \
+--name yolov7l-seg-baseline 
